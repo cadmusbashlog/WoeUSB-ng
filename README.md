@@ -1,9 +1,4 @@
-<div align="center">
-<h1>WoeUSB-ng</h1>
-<img src=".github/woeusb-logo.png" alt="brand" width="28%" />
-</div>
-
-_A Linux program to create a Windows USB stick installer from a real Windows DVD or image._
+WoeUSB-ng is a Linux program to create a Windows USB stick installer from a real Windows DVD or image.
 
 This package contains two programs:
 
@@ -19,11 +14,12 @@ Supported bootmodes:
 * Legacy/MBR-style/IBM PC compatible bootmode
 * Native UEFI booting is supported for Windows 7 and later images (limited to the FAT filesystem as the target)
 
-This project rewrite of original [WoeUSB](https://github.com/slacka/WoeUSB) 
+This project is a rewrite of the original [WoeUSB](https://github.com/slacka/WoeUSB).
 
 ## Installation
 
 ### Arch
+
 ```shell
 yay -S woeusb-ng
 ```
@@ -38,11 +34,13 @@ sudo apt install git p7zip-full python3-pip python3-wxgtk4.0 grub2-common grub-p
 ```
 
 #### Fedora (tested on: Fedora Workstation 33)
+
 ```shell
 sudo dnf install git p7zip p7zip-plugins python3-pip python3-wxpython4
 ```
 
 ### 2. Install WoeUSB-ng
+
 ```shell
 sudo pip3 install WoeUSB-ng
 ```
@@ -51,18 +49,22 @@ sudo pip3 install WoeUSB-ng
 
 ### 1. Install WoeUSB-ng's Build Dependencies
 #### Ubuntu
+
 ```shell
 sudo apt install git p7zip-full python3-pip python3-wxgtk4.0 grub2-common grub-pc-bin parted dosfstools ntfs-3g
 ```
 #### Arch
+
 ```shell
 sudo pacman -Suy p7zip python-pip python-wxpython
 ```
 #### Fedora (tested on: Fedora Workstation 33) 
+
 ```shell
 sudo dnf install git p7zip p7zip-plugins python3-pip python3-wxpython4
 ```
 ### 2. Install WoeUSB-ng
+
 ```shell
 git clone https://github.com/WoeUSB/WoeUSB-ng.git
 cd WoeUSB-ng
@@ -70,6 +72,7 @@ sudo pip3 install .
 ```
 
 ## Installation from source code locally or in virtual environment 
+
 ```shell
 git clone https://github.com/WoeUSB/WoeUSB-ng.git
 cd WoeUSB-ng
